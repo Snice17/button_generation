@@ -1,0 +1,203 @@
+body {
+	background: url("../images/bg.png");
+	
+	-webkit-box-shadow: inset 0px 2px 3px 0px rgba(50, 50, 50, 0.16);
+	-moz-box-shadow:    inset 0px 2px 3px 0px rgba(50, 50, 50, 0.16);
+	box-shadow:         inset 0px 2px 3px 0px rgba(50, 50, 50, 0.16);
+	
+	font-family: 'PT Sans', sans-serif;
+	font-size: 100%;
+	padding: 10px 0 0 0;
+	margin: 0;
+	width: 100%;
+}
+
+	.index {
+		background: #fff;
+		border-radius: 5px;
+		margin: auto;
+		padding: 0 0 60px 0;
+		width: 90%;
+	}
+
+
+	.header {
+		height: 80px;
+	}
+
+			.header_title {
+				font-size: 1.5em;
+				line-height: 80px;
+				text-align: center;
+				text-transform: uppercase;
+			}
+	
+	.main {
+		border-bottom: 3px dashed #a1a1a1;
+		margin: 0 auto 50px auto;
+		padding: 0 0 20px 0;
+		width: 90%;
+	}	
+
+
+		.main__options {
+			margin-right: 0.3%;	
+		}
+
+			.main__options-group {
+				padding: 0 0 25px 0;
+			}
+
+			
+
+			.clearfix:before,
+			.clearfix:after {
+		   		content: "";
+		    	display: table;
+			}
+
+			.clearfix:after {
+			    clear: both;
+			}
+
+		.main_title {
+			font-size: 1.4em;
+			text-align: center;
+			padding: 0 0 30px 0;
+			text-transform: uppercase;
+		}
+
+		.main_options, .main_result {
+			float: left;
+			width: 49.5%;
+		}
+
+		.main_options {
+			margin-right: 0.3%;	
+		}
+
+			.main_options-group {
+				padding: 0 0 25px 0;
+			}
+
+		.main_result {
+			margin-left: 0.3%;			
+		}
+
+			.main_result-botton {
+				padding: 42px 0 0 38%;
+			}
+
+			.button {
+				background: #68b8eb; /* Old browsers */
+				/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+				background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2OGI4ZWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNDBhNWU1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+				background: -moz-radial-gradient(center, ellipse cover,  #68b8eb 0%, #40a5e5 100%); /* FF3.6+ */
+				background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#68b8eb), color-stop(100%,#40a5e5)); /* Chrome,Safari4+ */
+				background: -webkit-radial-gradient(center, ellipse cover,  #68b8eb 0%,#40a5e5 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-radial-gradient(center, ellipse cover,  #68b8eb 0%,#40a5e5 100%); /* Opera 12+ */
+				background: -ms-radial-gradient(center, ellipse cover,  #68b8eb 0%,#40a5e5 100%); /* IE10+ */
+				background: radial-gradient(ellipse at center,  #68b8eb 0%,#40a5e5 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68b8eb', endColorstr='#40a5e5',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+				
+				color: #fff;
+				
+				border: 1px solid #3181b4;
+				border-radius: 3px;
+				line-height: 45px;
+				font-weight: bold;
+				width: 140px;
+				height: 45px;
+				text-align: center;
+			}
+
+
+.form {
+	display: block;
+	width: 50%;
+	margin: auto;
+}
+
+	.form_group {
+		margin: 0 0 0 -2%;
+	}
+ 
+		.main_group-title {
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+	.form_group-textarea {
+		color: #e3e3e3;
+		height: 110px;
+		margin: 0 0 2% 2%;
+		resize: none;
+		width: 45%;
+	}
+
+	.form_group-email {
+		display: block;
+		margin: auto;
+		width: 48%;
+		height: 30px;
+	}
+
+	.form_group-btn {
+		border: 1px solid #47943e;
+		border-radius: 25px;
+
+
+		background: #93cb8b; /* Old browsers */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzkzY2I4YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1NWFmNGEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  #93cb8b 0%, #55af4a 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93cb8b), color-stop(100%,#55af4a)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #93cb8b 0%,#55af4a 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #93cb8b 0%,#55af4a 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #93cb8b 0%,#55af4a 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #93cb8b 0%,#55af4a 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cb8b', endColorstr='#55af4a',GradientType=0 ); /* IE6-8 */
+
+		box-shadow: inset 0px 2px 5px 0px rgba(206, 232, 203, 0.8), 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: inset 0px 2px 5px 0px rgba(206, 232, 203, 0.8), 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: inset 0px 2px 5px 0px rgba(206, 232, 203, 0.8),0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+		color: #fff;
+		cursor: pointer;
+		display: block;
+		font-size: 1em;
+		line-height: 36px;
+		font-weight: bold;
+		height: 38px;
+
+		transition: .2s;
+		margin:  15px auto 60px auto;
+		width: 110px;
+	}
+
+		.form_group-btn:hover {
+			box-shadow: none;
+			-moz-box-shadow: none;
+			-webkit-box-shadow: none;
+		}
+
+		
+
+
+/* Изменение расположения блоков */
+
+@media screen and (max-width: 768px) {
+    .main_options, .main_result {
+        width: 100%;
+    }
+
+    .main_result  {
+    	margin: 50px 0 0 0;
+    }
+
+    .form textarea,
+	.form input[type="email"]{
+		width: 100%;
+		margin: 0;
+	}
+}
