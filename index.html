@@ -4,6 +4,12 @@
 	<meta charset="UTF-8">
 	<title>CSS3 - Generator button online</title>
 	<link rel="stylesheet" href="style/style.css">
+
+	<!-- jQuery UI -->
+	<link rel="stylesheet" type="text/css" href="style/jquery-ui.css">
+	<link rel="stylesheet" href="style/jquery-ui.structure.css">
+	<link rel="stylesheet" href="style/jquery-ui.theme.min.css">
+
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'></head>
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,16 +36,22 @@
 			<div class="main_options">
 				<div class="main_title">Options</div>
 				<div class="main_options-group">
-					<span class="main_group-title">Border-radius</span>
-					<div class="slider"></div>
+					<div class="main_group-title">Border-radius</div>
+					<div class="main_group-option">
+						<div id="jsOptionBorderWidth"></div>
+					</div>
 				</div>
 				<div class="main_options-group">
-					<span class="main_group-title">Border-size</span>
-					<div class="slider"></div>
+					<div class="main_group-title">Border-size</div>
+					<div class="main_group-option">
+						<div id="jsOptionBorderRadius"></div>
+					</div>
 				</div>
 				<div class="main_options-group">
-					<span class="main_group-title">Text</span>
-					<div class="slider"></div>
+					<div class="main_group-title">Text</div>
+					<div class="main_group-option main_group-text">
+						<input id="jsOptionText" class="main_options-text" type="text" placeholder="Text Button">
+					</div>
 				</div>
 			</div>
 
@@ -71,6 +83,8 @@
 	</div>
 
 	<script src="libs/jquery-2.1.1.min.js"></script>
+	<script src="libs/jquery-ui.min.js"></script>
+
 	<script src="scripts/code.js"></script>
 </body>
 </html>

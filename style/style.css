@@ -39,17 +39,6 @@ body {
 		width: 90%;
 	}	
 
-
-		.main__options {
-			margin-right: 0.3%;	
-		}
-
-			.main__options-group {
-				padding: 0 0 25px 0;
-			}
-
-			
-
 			.clearfix:before,
 			.clearfix:after {
 		   		content: "";
@@ -62,8 +51,8 @@ body {
 
 		.main_title {
 			font-size: 1.4em;
-			text-align: center;
 			padding: 0 0 30px 0;
+			text-align: center;
 			text-transform: uppercase;
 		}
 
@@ -72,13 +61,34 @@ body {
 			width: 49.5%;
 		}
 
-		.main_options {
-			margin-right: 0.3%;	
-		}
-
 			.main_options-group {
-				padding: 0 0 25px 0;
+				height: 50px;
 			}
+
+				.main_group-title {
+					font-size: 1.5em;
+					float: left;
+					font-weight: bold;
+					text-align: right;
+					width: 30%;
+				}
+
+				.main_group-option {
+					width: 60%;
+					float: right;
+					margin: 10px 0 0 10%;
+				}
+
+					.main_group-text {
+						margin: 0 0 0 10%;
+					}
+
+					.main_options-text {
+						height: 30px;
+						width: 46%;
+						margin: 0;
+						padding: 0 0 0 1%;
+					}
 
 		.main_result {
 			margin-left: 0.3%;			
@@ -102,13 +112,13 @@ body {
 				
 				color: #fff;
 				
-				border: 1px solid #3181b4;
 				border-radius: 3px;
-				line-height: 45px;
+				border: 1px solid #3181b4;
 				font-weight: bold;
-				width: 140px;
 				height: 45px;
+				line-height: 45px;
 				text-align: center;
+				width: 140px;
 			}
 
 
@@ -121,11 +131,6 @@ body {
 	.form_group {
 		margin: 0 0 0 -2%;
 	}
- 
-		.main_group-title {
-			font-size: 18px;
-			font-weight: bold;
-		}
 
 	.form_group-textarea {
 		color: #e3e3e3;
@@ -166,9 +171,9 @@ body {
 		cursor: pointer;
 		display: block;
 		font-size: 1em;
-		line-height: 36px;
 		font-weight: bold;
 		height: 38px;
+		line-height: 36px;
 
 		transition: .2s;
 		margin:  15px auto 60px auto;
@@ -181,8 +186,6 @@ body {
 			-webkit-box-shadow: none;
 		}
 
-		
-
 
 /* Изменение расположения блоков */
 
@@ -190,6 +193,15 @@ body {
     .main_options, .main_result {
         width: 100%;
     }
+
+		.main_group-title, .main_group-option {
+			width: 100%;
+			text-align: left;
+		}
+
+		.main_options-text {
+			width: 100%;
+		}
 
     .main_result  {
     	margin: 50px 0 0 0;
@@ -200,4 +212,5 @@ body {
 		width: 100%;
 		margin: 0;
 	}
+
 }
