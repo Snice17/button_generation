@@ -7,10 +7,9 @@
 
 	<!-- jQuery UI -->
 	<link rel="stylesheet" type="text/css" href="style/jquery-ui.css">
-	<link rel="stylesheet" href="style/jquery-ui.structure.css">
 	<link rel="stylesheet" href="style/jquery-ui.theme.css">
-
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'></head>
+	<link rel="stylesheet" href="style/jquery-ui.structure.css">
+	<link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'></head>
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,6 +35,18 @@
 			<div class="main_options">
 				<div class="main_title">Options</div>
 				<div class="main_options-group">
+					<div class="main_group-title">Height</div>
+					<div class="main_group-option">
+						<div id="jsOptionHeight"></div>
+					</div>
+				</div>
+				<div class="main_options-group">
+					<div class="main_group-title">Width</div>
+					<div class="main_group-option">
+						<div id="jsOptionWidth"></div>
+					</div>
+				</div>
+				<div class="main_options-group">
 					<div class="main_group-title">Border-radius</div>
 					<div class="main_group-option">
 						<div id="jsOptionBorderRadius"></div>
@@ -48,13 +59,33 @@
 					</div>
 				</div>
 				<div class="main_options-group">
-					<div class="main_group-title">Text</div>
-					<div class="main_group-option main_group-text">
-						<input id="jsOptionText" class="main_options-text" type="text" placeholder="Text Button">
+					<div class="main_group-title">Font-size</div>
+					<div class="main_group-option">
+						<div id="jsOptionFontSize"></div>
 					</div>
 				</div>
-			</div>
+				<div class="main_options-group">
+					<div class="main_group-title">Background</div>
+					<div class="main_group-option">
+						<input class="color" id="jsOptionColorBg" value="#3181b4"></div>
+				</div>
+				<div class="main_options-group">
+					<div class="main_group-title">Color Border</div>
+					<div class="main_group-option">
+						<input class="color" id="jsOptionColorBorder" value="#000000"></div>
+				</div>
+				<div class="main_options-group">
+					<div class="main_group-title">Font Color</div>
+					<div class="main_group-option">
+						<input class="color" id="jsOptionColorFont" value="#ffffff"></div>
+				</div>
+				<div class="main_options-group">
+					<div class="main_group-title">Text</div>
+					<div class="main_group-option main_group-text">
+						<input id="jsOptionText" class="main_options-text" type="text" value="Button text"></div>
+				</div>
 
+			</div>
 			<div class="main_result">
 				<div class="main_title">Result</div>
 				<div class="main_result-botton">
@@ -67,12 +98,14 @@
 			<form id="js-submitEmail" role="form">
 
 				<div class="form_group clearfix">
-					<textarea class="form_group-textarea" id="js-htmlCode">HTML code</textarea>
-					<textarea class="form_group-textarea" id="js-cssCode">CSS code</textarea>
+					<textarea class="form_group-textarea" id="js-htmlCode" readonly="readonly">HTML code</textarea>
+
+					<textarea class="form_group-textarea" id="js-cssCode" readonly="readonly">CSS code</textarea>
+
 				</div>
 
-				<div class="form_group">
-					<input class="form_group-email" type="email" name="mail" placeholder="mail"></div>
+				<div class="form_group" id="form_email">
+					<input class="form_group-email" id="email" type="email" name="mail" placeholder="mail"></div>
 
 				<div class="form_group">
 					<button type="submit" class="form_group-btn">Submit</button>
@@ -82,9 +115,11 @@
 		</section>
 	</div>
 
-	<script src="libs/jquery-2.1.1.min.js"></script>
+	<script src="libs/jquery-1.11.1.min.js"></script>
 	<script src="libs/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="libs/jscolor/jscolor.js"></script>
 
+	<script src="scripts/code_valid.js"></script>
 	<script src="scripts/code.js"></script>
 </body>
 </html>
